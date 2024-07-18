@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+
+body{
+    background: url(https://img.olympics.com/images/image/private/t_social_share_thumb/f_auto/primary/zp8irjlrzfu7s2jdault);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position-x: 550px;
+    background-position-y: 70px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1{
+    margin-top: 50px;
+    text-align: start;
+    font-size: 50px;
+    margin-left: 40px;
+}
+
+.sobre{
+    font-size: 20px;
+    padding-right: 700px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.missao-box{
+    color: #000000;
+    padding: 40px; 
+    border-radius: 20px;
+    border: 2px solid #000000;
+    margin-top: 45px;
+    transition: 1s;
+    margin-left: 50px; 
+    margin-right: 500px;
+    display: flex;  
+}
+
+.missao-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff81;
+}
+
+.missao-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+
+
+
+
+.visao-box{
+    color: #000000;
+    padding: 40px; 
+    border-radius: 20px;
+    border: 2px solid #000000;
+    margin-top: 45px;
+    transition: 1s;
+    margin-inline: 50px; 
+    display: flex;
+    margin-left: 500px; 
+    margin-right: 50px;
+}
+
+.visao-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff81;
+}
+
+.visao-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+  
+}
+
+.texto-vi{
+    text-align: right;
+}
+
+.valores-box{
+    color: #000000;
+    padding: 40px; 
+    border-radius: 20px;
+    border: 2px solid #000000;
+    margin-top: 45px;
+    transition: 1s;
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 50px; 
+    margin-right: 500px;
+    
+}
+
+
+.valores-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff81;
+}
+
+.valores-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.valores-img{
+    margin-left: 80px;
+}
+
+
+
+
+.pretinhos{
+    margin-left: 17%;
+    margin-bottom: 50px;
+    background-image: url(IMAGENS/PRETINHOS.png);
+    background-size: cover;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 900px;
+    border: transparent;
+}
+
+.pretinhos:hover{
+    filter: blur(0px) grayscale(0%);
+    transition-duration: 1.5s;
+    transform: scale(1.05);
+}
+
+.pretinhos:not(:hover){
+    transition-duration: 1.5s;
+    filter: blur(0.5px) grayscale(100%);
+}
+
+
+

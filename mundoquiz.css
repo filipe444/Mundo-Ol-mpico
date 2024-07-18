@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    margin-inline: 300px;
+    margin-top: -20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    border-radius: 10px;
+    text-shadow: rgb(189, 189, 189) -6px 5px 4px, rgb(255, 255, 255) -9px 9px 3px;
+}
+
+h2{
+    margin-top: 100px;
+}
+
+.historiap{
+    margin-left: 50px;
+}
+
+.maop{
+    margin-left: 17px;
+}
+
+.corridap{
+    margin-left: 70px;
+}
+
+.bolap{
+    margin-left: 25px;
+}
+
+.marciaisp{
+    margin-left: 70px;
+}
+
+.aquaticosp{
+    margin-left: 70px;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    padding-block: 30px;
+    
+}
+
+.btns p{
+    padding-inline: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.76);
+    border: solid 1px;
+    border-radius: 20px;
+    padding-block: 5px;
+}
+
+.btns img{
+    background-color: rgba(255, 255, 255, 0.918);
+    border-radius: 50px;
+    border: solid 2px black;
+}
+
+.btns button{
+    width: 400px;
+    height: 150px;
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btns1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btns2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.historia{
+    text-decoration: none;
+    background-image: url(https://cdn.braziliantimes.com/website/base/2be/9a3/1b5/993-621-olympic-games-sports-background-with-copy-space-text.jpg);
+    background-size: cover;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+}
+
+.historia:hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.azul{
+    text-decoration: none;
+    background-image: url(https://cpb.org.br/wp-content/uploads/2023/04/BannerSite_Novo_EducacaoParalimpica_1280x640-1-19.png);
+    background-size: cover;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+}
+
+.azul:hover{
+    background-color: rgb(0, 162, 255);
+}
+
+.amarelo{
+    text-decoration: none;
+    background-image: url(https://img.freepik.com/fotos-premium/um-desenho-de-um-ciclista-em-um-fundo-amarelo-com-as-palavras-a-bicicleta-na-parte-inferior_1187703-39349.jpg);
+    background-size: cover;
+    background-position-y: 10%;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+}
+
+.amarelo:hover{
+    background-color: rgba(255, 230, 0, 0);
+}
+
+.preto{
+    text-decoration: none;
+    background-image: url(https://img.freepik.com/fotos-premium/jogador-de-futebol-abstrato-com-bola_692702-5669.jpg);
+    background-size: 100%;
+    background-position-y: 20%;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+}
+
+.preto:hover{
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+.verde{
+    text-decoration: none;
+    background-image: url(https://t4.ftcdn.net/jpg/01/08/98/83/360_F_108988395_vFDD7if0buM7xcApEVFGN4YJkPXTxbvj.jpg);
+    background-size: cover;
+    background-position-y: 20%;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+}
+
+.verde:hover{
+    background-color: rgb(45, 226, 115);
+}
+
+.vermelho{
+    text-decoration: none;
+    background-image: url(https://cpb.org.br/wp-content/uploads/2023/04/BannerSite_Novo_EducacaoParalimpica_1280x640-1-4.png);
+    background-size: cover;
+    background-position-y: 20%;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+}
+
+.vermelho:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+
+
+
+

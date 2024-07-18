@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="IMAGENS/LOGOM.png" type="image/x-icon">
+    <link rel="stylesheet" href="quizhistoria.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz História</title>
+</head>
+
+<body>
+
+    <h1>QUIZ - HISTÓRIA DAS OLIMPÍADAS :</h1>
+ 
+
+    <div class="quiz-container" id="quiz">
+
+        <div id="pergunta"></div>
+        <div id="opcoes"></div>
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+
+        const perguntas = [
+            {
+                pergunta: "1) Qual cidade sediou os primeiros Jogos Olímpicos modernos em 1896?",
+                opcoes: ["A) Paris", "B) Atenas", "C) Londres", "D) Roma"],
+                resposta: "B) Atenas"
+            },
+
+            {
+                pergunta: "2) Qual esporte fez sua estreia olímpica nos Jogos de Sydney 2000?",
+                opcoes: ["A) Rugby", "B) Golfe", "C) Softbol", "D) Escalada"],
+                resposta: "B) Golfe"
+            },
+
+            {
+                pergunta: "3) Quantos anéis estão presentes no símbolo olímpico?",
+                opcoes: ["A) 4", "B) 5", "C) 6", "D) 7"],
+                resposta: "B) 5"
+            },
+
+            {
+                pergunta: "4) Em que país os Jogos Olímpicos de Inverno de 2022 foram realizados?",
+                opcoes: ["A) Coreia do Sul", "B) Canadá", "C) China", "D) Rússia"],
+                resposta: "C) China"
+            },
+
+            {
+                pergunta: "5) Quem é considerado o 'pai' dos Jogos Olímpicos modernos?",
+                opcoes: ["A) Pierre de Coubertin", "B) Jesse Owens", "C) Usain Bolt", ],
+                resposta: "A) Pierre de Coubertin"
+            },
+
+            {
+                pergunta: "6) Qual é o esporte mais antigo que ainda faz parte dos Jogos Olímpicos?",
+                opcoes: ["A) Atletismo", "B) Luta Livre", "C) Remo", "D) Tiro com Arco"],
+                resposta: "A) Atletismo"
+            },
+
+            {
+                pergunta: "7) Quantas vezes o Brasil sediou os Jogos Olímpicos?",
+                opcoes: ["A) 1 vez", "B) 2 vezes", "C) 3 vezes", "D) Nunca sediou"],
+                resposta: "A) 1 vez"
+            },
+
+            {
+                pergunta: "8) Quem ganhou a primeira medalha de ouro olímpica do Brasil em esportes individuais?",
+                opcoes: ["A) Robert Scheidt", "B) Joaquim Cruz", "C) Sarah Menezes", "D) Maurren Maggi"],
+                resposta: "C) Sarah Menezes"
+            },
+
+            {
+                pergunta: "9) Qual é o lema olímpico atualmente?",
+                opcoes: ["A) Mais rápido, mais alto, mais forte", "B) Unidos pela diversidade", "C) Paixão, performance, participação", "D) Um mundo, um sonho"],
+                resposta: "B) Unidos pela diversidade"
+            },
+
+            {
+                pergunta: "10) Qual cidade sediará os Jogos Olímpicos de Verão de 2024?",
+                opcoes: ["A) Los Angeles", "B) Rio de Janeiro", "C) Paris", "D) Tóquio"],
+                resposta: "C) Paris"
+            },
+
+            {
+                pergunta: "Chegamos ao fim! Você gostou do Quiz?",
+                opcoes: ["Sim", "Não"],
+                resposta: "Sim,Não"
+            }
+        ];
+
+        const perguntaElemento = document.getElementById("pergunta");
+        const opcoesElemento = document.getElementById("opcoes");
+        const resultadoElemento = document.getElementById("resultado");
+
+        let indicePerguntaAtual = 0;
+
+        function carregarPergunta() {
+            const perguntaAtual = perguntas[indicePerguntaAtual];
+            perguntaElemento.textContent = perguntaAtual.pergunta;
+
+            opcoesElemento.innerHTML = "";
+            perguntaAtual.opcoes.forEach(opcao => {
+                const botao = document.createElement("button");
+                botao.textContent = opcao;
+                botao.addEventListener("click", () => verificarResposta(opcao));
+                opcoesElemento.appendChild(botao);
+            });
+        }
+
+        function verificarResposta(respostaSelecionada) {
+            const perguntaAtual = perguntas[indicePerguntaAtual];
+            if (respostaSelecionada === perguntaAtual.resposta) {
+                resultadoElemento.textContent = "Resposta correta!";
+                resultadoElemento.className = "correto";
+            } else {
+                resultadoElemento.textContent = "Resposta incorreta. A resposta correta é: " + perguntaAtual.resposta;
+                resultadoElemento.className = "incorreto";
+            }
+
+            indicePerguntaAtual++;
+            if (indicePerguntaAtual < perguntas.length) {
+                setTimeout(carregarPergunta, 500); //Carrega próxima pergunta após 2 segundos
+            } else {
+                resultadoElemento.textContent = "Agradeçemos pelo seu Feedback!";
+                resultadoElemento.className = "fim";
+            }
+        }
+
+        //Carrega a primeira pergunta quando a página carrega
+        carregarPergunta();
+
+
+    </script>
+
+
+</body>
+
+</html>

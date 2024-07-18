@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+body{
+    background-image: url(https://www.alemdaenergia.engie.com.br/uploads/2024/03/piscina-olimpiadas-2024.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h1{
+    margin-top: 40px;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    
+}
+
+
+.quiz-container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#pergunta{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+    background-color:  rgba(255, 0, 0, 0.517);
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: black -4px 4px 4px;
+    padding: 20px;
+    margin-top: 125px;
+    text-align: center;
+}
+
+#opcoes{
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color:  rgba(255, 0, 0, 0.514);
+    border-radius: 10px;
+}
+
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.correto{
+    margin-top: 30px;
+    font-size: 35px;
+    background-color: #8bc34a;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.incorreto{
+    margin-top: 30px;
+    font-size: 35px;
+    background-color: #ff2a2af6;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.fim{
+    margin-top: 30px;
+    color: aliceblue;
+    background-color:  rgb(0, 0, 0);
+    font-size: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+@media all and (max-width: 780px){
+    footer{
+        margin-top: 40px;
+        font-size: 30px;
+        margin-inline: 0px;
+        position: relative;
+    }
+}
